@@ -1,0 +1,129 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-01T04:55:43.020Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6718239000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Find temperature of Ahmedabad city",
+        "description": "",
+        "id": "find-city-temperature-using-ndtv-weather-app;find-temperature-of-ahmedabad-city",
+        "after": [
+          {
+            "result": {
+              "duration": 934463100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7874262700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "On the ndtv landing page",
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.on_the_ndtv_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6584071100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Open submenu",
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.open_submenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3285407300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on the weather button",
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.click_on_the_weather_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 232402100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Select Ahmedabad city in the pin your city section",
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.select_ahmedabad_city_in_the_pin_your_city_section()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 258852300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify that Ahmedabad city shows up on the map",
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.verify_that_ahmedabad_city_shows_up_on_the_map()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54971300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Open the Ahmedabad city weather pop up and get the temperature",
+            "match": {
+              "location": "com.ndtv.qa.glue.NDTV_StepDef.open_the_ahmedabad_city_weather_pop_up_and_get_the_temperature()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Temperature"
+          },
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@functional"
+          }
+        ]
+      }
+    ],
+    "name": "Find city temperature using NDTV weather app",
+    "description": "",
+    "id": "find-city-temperature-using-ndtv-weather-app",
+    "keyword": "Feature",
+    "uri": "file:src/test/resource/features/CityTemperature.feature",
+    "tags": []
+  }
+]
