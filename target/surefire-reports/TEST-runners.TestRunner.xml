@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="runners.TestRunner" time="26.237" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="runners.TestRunner" time="45.387" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="14.0.2+12-46"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="E:\Workspace_testVagrant\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15324251452976171006.tmp"/>
+    <property name="classworlds.conf" value="E:\Workspace_testVagrant\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16990772473129738669.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-14.0.2/bin/server;C:/Program Files/Java/jdk-14.0.2/bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\Java\jdk-14.0.2\bin;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\Desktop;;."/>
     <property name="jdk.debug" value="release"/>
@@ -56,5 +56,38 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Find city temperature using NDTV weather app" name="Find temperature of Ahmedabad city" time="26.237"/>
+  <testcase classname="Get city temperature from weather map API" name="Get temperature of Ahmedabad city" time="9.01"/>
+  <testcase classname="Find city temperature using NDTV weather app" name="Find temperature of Ahmedabad city" time="16.385"/>
+  <testcase classname="Compare city temperature between UI and API" name="Find temperature of Ahmedabad city on both UI and API and check if the difference is more than the threshold" time="19.992">
+    <error message="Temperature Difference more than threshold" type="com.ndtv.qa.glue.MatcherException">com.ndtv.qa.glue.MatcherException: Temperature Difference more than threshold
+	at com.ndtv.qa.glue.Weather_StepDef.check_if_the_difference_is_more_than_a_threshold(Weather_StepDef.java:151)
+	at ✽.Check if the difference is more than a threshold(file:///E:/Workspace_testVagrant/bdd/./src/test/resource/features/Compare.feature:16)
+</error>
+    <system-out>
+@phase3 @Temperature @web @api @functional
+Scenario: Find temperature of Ahmedabad city on both UI and API and check if the difference is more than the threshold &amp;#27;[90m# src/test/resource/features/Compare.feature:8&amp;#27;[0m
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mOn the ndtv landing page&amp;#27;[0m                                                                                       &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.on_the_ndtv_landing_page()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mOpen submenu&amp;#27;[0m                                                                                                     &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.open_submenu()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mClick on the weather button&amp;#27;[0m                                                                                      &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.click_on_the_weather_button()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mSelect Ahmedabad city in the pin your city section&amp;#27;[0m                                                               &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.select_ahmedabad_city_in_the_pin_your_city_section()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mVerify that Ahmedabad city shows up on the map&amp;#27;[0m                                                                   &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.verify_that_ahmedabad_city_shows_up_on_the_map()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mOpen the Ahmedabad city weather pop up and get the temperature and store&amp;#27;[0m                                         &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.open_the_ahmedabad_city_weather_pop_up_and_get_the_temperature_and_store()&amp;#27;[0m
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mGet the city temperature of Ahmedabad in celsius and store&amp;#27;[0m                                                       &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.get_the_city_temperature_of_ahmedabad_in_celsius_and_store()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mCheck if the difference is more than a threshold&amp;#27;[0m                                                                &amp;#27;[90m# com.ndtv.qa.glue.Weather_StepDef.check_if_the_difference_is_more_than_a_threshold()&amp;#27;[0m
+      &amp;#27;[31mcom.ndtv.qa.glue.MatcherException: Temperature Difference more than threshold
+	at com.ndtv.qa.glue.Weather_StepDef.check_if_the_difference_is_more_than_a_threshold(Weather_StepDef.java:151)
+	at âœ½.Check if the difference is more than a threshold(file:///E:/Workspace_testVagrant/bdd/./src/test/resource/features/Compare.feature:16)
+&amp;#27;[0m
+
+    Embedding errorImage [image/png 1278347 bytes]
+
+</system-out>
+    <system-err>Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 5990
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Sep 02, 2020 8:32:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
 </testsuite>

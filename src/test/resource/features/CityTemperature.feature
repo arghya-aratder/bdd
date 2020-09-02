@@ -1,4 +1,4 @@
-
+@phase1
 Feature: Find city temperature using NDTV weather app
 
 	@Temperature
